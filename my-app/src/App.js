@@ -15,9 +15,11 @@ const center = {
 
 function App() {
   //isLoaded starts as false, maybe a useEffect to set true instantly???
+  //use env file for api key
+    // add env to git ingore
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyAQN7cmsB0x2kvPyG-hqLQ8AJcGIKeVB4E",
+    googleMapsApiKey: "YOUR_API_KEY_HERE",
   });
 
   return (
